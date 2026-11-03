@@ -1,0 +1,29 @@
+[project]
+name = "tiu"
+version = "2.0.0a1"
+description = "Trust in User: normative trust calibration measurement for language models"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26",
+  "scipy>=1.13",
+  "pandas>=2.2",
+]
+
+[project.optional-dependencies]
+harness = [
+  "inspect-ai>=0.3.287",
+  "inspect-scout>=0.6.2",
+  "datasets>=5.1.0",
+]
+stats = ["statsmodels>=0.15", "pymc>=6.4", "arviz>=0.20"]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
