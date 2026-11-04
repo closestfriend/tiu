@@ -1,0 +1,766 @@
+{
+  "reports": [
+    {
+      "substrate": "simulated:none",
+      "n": 208,
+      "checks": {
+        "null_bias": {
+          "value": 0.0,
+          "pass": true
+        },
+        "negation_symmetry": {
+          "value": 0.0,
+          "pass": true
+        },
+        "order_stability": {
+          "value": 0.0,
+          "pass": true
+        },
+        "paraphrase_stability": {
+          "value": 0.0,
+          "pass": true
+        },
+        "monotonicity": {
+          "value": 1.0,
+          "pass": true
+        },
+        "unit_slope": {
+          "value": 0.999999999999999,
+          "pass": true
+        },
+        "recovery_bias": {
+          "value": -3.700743415417188e-17,
+          "pass": true
+        },
+        "direction_symmetry": {
+          "value": 0.0,
+          "pass": true
+        }
+      },
+      "verdict": "valid",
+      "statistics": {
+        "null_bias": {
+          "n": 16,
+          "mean_r_hat": 0.5,
+          "bias": 0.0
+        },
+        "negation_asymmetry": {
+          "n": 8,
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        "order_shift": {
+          "n": 48,
+          "mean_abs": 0.0
+        },
+        "paraphrase_spread": {
+          "n": 48,
+          "mean_sd": 0.0
+        },
+        "direction_symmetry": {
+          "n": 24,
+          "mean_true": 0.75,
+          "mean_false": 0.75,
+          "gap": 0.0
+        },
+        "calibration": {
+          "n": 48,
+          "spearman": 1.0,
+          "slope": 0.999999999999999,
+          "bias": -3.700743415417188e-17
+        }
+      },
+      "thresholds": {
+        "null_bias": 0.02,
+        "asymmetry": 0.1,
+        "order_shift": 0.03,
+        "paraphrase_sd": 0.05,
+        "min_spearman": 0.9,
+        "slope_band": [
+          0.8,
+          1.2
+        ],
+        "recovery_bias": 0.03,
+        "direction_gap": 0.03
+      }
+    },
+    {
+      "substrate": "simulated:optimistic",
+      "n": 208,
+      "checks": {
+        "null_bias": {
+          "value": 0.0,
+          "pass": true
+        },
+        "negation_symmetry": {
+          "value": 0.0,
+          "pass": true
+        },
+        "order_stability": {
+          "value": 0.0,
+          "pass": true
+        },
+        "paraphrase_stability": {
+          "value": 0.0,
+          "pass": true
+        },
+        "monotonicity": {
+          "value": 1.0,
+          "pass": true
+        },
+        "unit_slope": {
+          "value": 0.8233949563277173,
+          "pass": true
+        },
+        "recovery_bias": {
+          "value": 0.0558466536054664,
+          "pass": false
+        },
+        "direction_symmetry": {
+          "value": 0.0,
+          "pass": true
+        }
+      },
+      "verdict": "invalid",
+      "statistics": {
+        "null_bias": {
+          "n": 16,
+          "mean_r_hat": 0.5,
+          "bias": 0.0
+        },
+        "negation_asymmetry": {
+          "n": 8,
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        "order_shift": {
+          "n": 48,
+          "mean_abs": 0.0
+        },
+        "paraphrase_spread": {
+          "n": 48,
+          "mean_sd": 0.0
+        },
+        "direction_symmetry": {
+          "n": 24,
+          "mean_true": 0.8058466536054665,
+          "mean_false": 0.8058466536054665,
+          "gap": 0.0
+        },
+        "calibration": {
+          "n": 48,
+          "spearman": 1.0,
+          "slope": 0.8233949563277173,
+          "bias": 0.0558466536054664
+        }
+      },
+      "thresholds": {
+        "null_bias": 0.02,
+        "asymmetry": 0.1,
+        "order_shift": 0.03,
+        "paraphrase_sd": 0.05,
+        "min_spearman": 0.9,
+        "slope_band": [
+          0.8,
+          1.2
+        ],
+        "recovery_bias": 0.03,
+        "direction_gap": 0.03
+      }
+    },
+    {
+      "substrate": "simulated:claim_truth_bias",
+      "n": 208,
+      "checks": {
+        "null_bias": {
+          "value": 0.0,
+          "pass": true
+        },
+        "negation_symmetry": {
+          "value": 0.0,
+          "pass": true
+        },
+        "order_stability": {
+          "value": 0.0,
+          "pass": true
+        },
+        "paraphrase_stability": {
+          "value": 0.0,
+          "pass": true
+        },
+        "monotonicity": {
+          "value": 0.8366600265340757,
+          "pass": false
+        },
+        "unit_slope": {
+          "value": 0.994927784568997,
+          "pass": true
+        },
+        "recovery_bias": {
+          "value": -0.0043200266806503644,
+          "pass": true
+        },
+        "direction_symmetry": {
+          "value": 0.12033336057223354,
+          "pass": false
+        }
+      },
+      "verdict": "invalid",
+      "statistics": {
+        "null_bias": {
+          "n": 16,
+          "mean_r_hat": 0.5,
+          "bias": 0.0
+        },
+        "negation_asymmetry": {
+          "n": 8,
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        "order_shift": {
+          "n": 48,
+          "mean_abs": 0.0
+        },
+        "paraphrase_spread": {
+          "n": 48,
+          "mean_sd": 0.0
+        },
+        "direction_symmetry": {
+          "n": 24,
+          "mean_true": 0.8058466536054665,
+          "mean_false": 0.6855132930332329,
+          "gap": 0.12033336057223354
+        },
+        "calibration": {
+          "n": 48,
+          "spearman": 0.8366600265340757,
+          "slope": 0.994927784568997,
+          "bias": -0.0043200266806503644
+        }
+      },
+      "thresholds": {
+        "null_bias": 0.02,
+        "asymmetry": 0.1,
+        "order_shift": 0.03,
+        "paraphrase_sd": 0.05,
+        "min_spearman": 0.9,
+        "slope_band": [
+          0.8,
+          1.2
+        ],
+        "recovery_bias": 0.03,
+        "direction_gap": 0.03
+      }
+    },
+    {
+      "substrate": "simulated:asymmetric",
+      "n": 208,
+      "checks": {
+        "null_bias": {
+          "value": 0.049343830056226,
+          "pass": false
+        },
+        "negation_symmetry": {
+          "value": 0.39999999999999997,
+          "pass": false
+        },
+        "order_stability": {
+          "value": 0.0,
+          "pass": true
+        },
+        "paraphrase_stability": {
+          "value": 0.0,
+          "pass": true
+        },
+        "monotonicity": {
+          "value": 1.0,
+          "pass": true
+        },
+        "unit_slope": {
+          "value": 0.999999999999999,
+          "pass": true
+        },
+        "recovery_bias": {
+          "value": -3.700743415417188e-17,
+          "pass": true
+        },
+        "direction_symmetry": {
+          "value": 0.0,
+          "pass": true
+        }
+      },
+      "verdict": "invalid",
+      "statistics": {
+        "null_bias": {
+          "n": 16,
+          "mean_r_hat": 0.549343830056226,
+          "bias": 0.049343830056226
+        },
+        "negation_asymmetry": {
+          "n": 8,
+          "mean_abs": 0.39999999999999997,
+          "max_abs": 0.39999999999999997
+        },
+        "order_shift": {
+          "n": 48,
+          "mean_abs": 0.0
+        },
+        "paraphrase_spread": {
+          "n": 48,
+          "mean_sd": 0.0
+        },
+        "direction_symmetry": {
+          "n": 24,
+          "mean_true": 0.75,
+          "mean_false": 0.75,
+          "gap": 0.0
+        },
+        "calibration": {
+          "n": 48,
+          "spearman": 1.0,
+          "slope": 0.999999999999999,
+          "bias": -3.700743415417188e-17
+        }
+      },
+      "thresholds": {
+        "null_bias": 0.02,
+        "asymmetry": 0.1,
+        "order_shift": 0.03,
+        "paraphrase_sd": 0.05,
+        "min_spearman": 0.9,
+        "slope_band": [
+          0.8,
+          1.2
+        ],
+        "recovery_bias": 0.03,
+        "direction_gap": 0.03
+      }
+    },
+    {
+      "substrate": "simulated:order",
+      "n": 208,
+      "checks": {
+        "null_bias": {
+          "value": 0.0,
+          "pass": true
+        },
+        "negation_symmetry": {
+          "value": 0.0,
+          "pass": true
+        },
+        "order_stability": {
+          "value": 0.04304900516264548,
+          "pass": false
+        },
+        "paraphrase_stability": {
+          "value": 0.0,
+          "pass": true
+        },
+        "monotonicity": {
+          "value": 1.0,
+          "pass": true
+        },
+        "unit_slope": {
+          "value": 0.999999999999999,
+          "pass": true
+        },
+        "recovery_bias": {
+          "value": -3.700743415417188e-17,
+          "pass": true
+        },
+        "direction_symmetry": {
+          "value": 0.0,
+          "pass": true
+        }
+      },
+      "verdict": "invalid",
+      "statistics": {
+        "null_bias": {
+          "n": 16,
+          "mean_r_hat": 0.5,
+          "bias": 0.0
+        },
+        "negation_asymmetry": {
+          "n": 8,
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        "order_shift": {
+          "n": 48,
+          "mean_abs": 0.04304900516264548
+        },
+        "paraphrase_spread": {
+          "n": 48,
+          "mean_sd": 0.0
+        },
+        "direction_symmetry": {
+          "n": 24,
+          "mean_true": 0.75,
+          "mean_false": 0.75,
+          "gap": 0.0
+        },
+        "calibration": {
+          "n": 48,
+          "spearman": 1.0,
+          "slope": 0.999999999999999,
+          "bias": -3.700743415417188e-17
+        }
+      },
+      "thresholds": {
+        "null_bias": 0.02,
+        "asymmetry": 0.1,
+        "order_shift": 0.03,
+        "paraphrase_sd": 0.05,
+        "min_spearman": 0.9,
+        "slope_band": [
+          0.8,
+          1.2
+        ],
+        "recovery_bias": 0.03,
+        "direction_gap": 0.03
+      }
+    },
+    {
+      "substrate": "simulated:insensitive",
+      "n": 208,
+      "checks": {
+        "null_bias": {
+          "value": 0.0,
+          "pass": true
+        },
+        "negation_symmetry": {
+          "value": 0.0,
+          "pass": true
+        },
+        "order_stability": {
+          "value": 0.0,
+          "pass": true
+        },
+        "paraphrase_stability": {
+          "value": 0.0,
+          "pass": true
+        },
+        "monotonicity": {
+          "value": 0.0,
+          "pass": false
+        },
+        "unit_slope": {
+          "value": 6.823375250354862e-17,
+          "pass": false
+        },
+        "recovery_bias": {
+          "value": 0.09999999999999998,
+          "pass": false
+        },
+        "direction_symmetry": {
+          "value": 0.0,
+          "pass": true
+        }
+      },
+      "verdict": "invalid",
+      "statistics": {
+        "null_bias": {
+          "n": 16,
+          "mean_r_hat": 0.5,
+          "bias": 0.0
+        },
+        "negation_asymmetry": {
+          "n": 8,
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        "order_shift": {
+          "n": 48,
+          "mean_abs": 0.0
+        },
+        "paraphrase_spread": {
+          "n": 48,
+          "mean_sd": 0.0
+        },
+        "direction_symmetry": {
+          "n": 24,
+          "mean_true": 0.85,
+          "mean_false": 0.85,
+          "gap": 0.0
+        },
+        "calibration": {
+          "n": 48,
+          "spearman": 0.0,
+          "slope": 6.823375250354862e-17,
+          "bias": 0.09999999999999998
+        }
+      },
+      "thresholds": {
+        "null_bias": 0.02,
+        "asymmetry": 0.1,
+        "order_shift": 0.03,
+        "paraphrase_sd": 0.05,
+        "min_spearman": 0.9,
+        "slope_band": [
+          0.8,
+          1.2
+        ],
+        "recovery_bias": 0.03,
+        "direction_gap": 0.03
+      }
+    },
+    {
+      "substrate": "simulated:noisy",
+      "n": 208,
+      "checks": {
+        "null_bias": {
+          "value": -0.03913264172043429,
+          "pass": false
+        },
+        "negation_symmetry": {
+          "value": 0.6412662687825057,
+          "pass": false
+        },
+        "order_stability": {
+          "value": 0.07453466290341734,
+          "pass": false
+        },
+        "paraphrase_stability": {
+          "value": 0.07038659302352501,
+          "pass": false
+        },
+        "monotonicity": {
+          "value": 0.7661986400779608,
+          "pass": false
+        },
+        "unit_slope": {
+          "value": 0.9189118634544191,
+          "pass": true
+        },
+        "recovery_bias": {
+          "value": -0.007798630308182758,
+          "pass": true
+        },
+        "direction_symmetry": {
+          "value": 0.030975694937240617,
+          "pass": false
+        }
+      },
+      "verdict": "invalid",
+      "statistics": {
+        "null_bias": {
+          "n": 16,
+          "mean_r_hat": 0.4608673582795657,
+          "bias": -0.03913264172043429
+        },
+        "negation_asymmetry": {
+          "n": 8,
+          "mean_abs": 0.6412662687825057,
+          "max_abs": 1.7087561773932878
+        },
+        "order_shift": {
+          "n": 48,
+          "mean_abs": 0.07453466290341734
+        },
+        "paraphrase_spread": {
+          "n": 48,
+          "mean_sd": 0.07038659302352501
+        },
+        "direction_symmetry": {
+          "n": 24,
+          "mean_true": 0.726713522223197,
+          "mean_false": 0.7576892171604376,
+          "gap": 0.030975694937240617
+        },
+        "calibration": {
+          "n": 48,
+          "spearman": 0.7661986400779608,
+          "slope": 0.9189118634544191,
+          "bias": -0.007798630308182758
+        }
+      },
+      "thresholds": {
+        "null_bias": 0.02,
+        "asymmetry": 0.1,
+        "order_shift": 0.03,
+        "paraphrase_sd": 0.05,
+        "min_spearman": 0.9,
+        "slope_band": [
+          0.8,
+          1.2
+        ],
+        "recovery_bias": 0.03,
+        "direction_gap": 0.03
+      }
+    },
+    {
+      "substrate": "simulated:constant_offset",
+      "n": 208,
+      "checks": {
+        "null_bias": {
+          "value": 0.0,
+          "pass": true
+        },
+        "negation_symmetry": {
+          "value": 1.1102230246251565e-16,
+          "pass": true
+        },
+        "order_stability": {
+          "value": 0.0,
+          "pass": true
+        },
+        "paraphrase_stability": {
+          "value": 0.0,
+          "pass": true
+        },
+        "monotonicity": {
+          "value": 0.956182887467515,
+          "pass": true
+        },
+        "unit_slope": {
+          "value": 0.9999999999999993,
+          "pass": true
+        },
+        "recovery_bias": {
+          "value": -1.850371707708594e-17,
+          "pass": true
+        },
+        "direction_symmetry": {
+          "value": 0.0,
+          "pass": true
+        }
+      },
+      "verdict": "valid",
+      "statistics": {
+        "null_bias": {
+          "n": 16,
+          "mean_r_hat": 0.5,
+          "bias": 0.0
+        },
+        "negation_asymmetry": {
+          "n": 8,
+          "mean_abs": 1.1102230246251565e-16,
+          "max_abs": 1.1102230246251565e-16
+        },
+        "order_shift": {
+          "n": 48,
+          "mean_abs": 0.0
+        },
+        "paraphrase_spread": {
+          "n": 48,
+          "mean_sd": 0.0
+        },
+        "direction_symmetry": {
+          "n": 24,
+          "mean_true": 0.75,
+          "mean_false": 0.75,
+          "gap": 0.0
+        },
+        "calibration": {
+          "n": 48,
+          "spearman": 0.956182887467515,
+          "slope": 0.9999999999999993,
+          "bias": -1.850371707708594e-17
+        }
+      },
+      "thresholds": {
+        "null_bias": 0.02,
+        "asymmetry": 0.1,
+        "order_shift": 0.03,
+        "paraphrase_sd": 0.05,
+        "min_spearman": 0.9,
+        "slope_band": [
+          0.8,
+          1.2
+        ],
+        "recovery_bias": 0.03,
+        "direction_gap": 0.03
+      }
+    }
+  ],
+  "agreement_vs_ideal": {
+    "none": {
+      "n": 160,
+      "ccc": 1.0,
+      "bland_altman": {
+        "bias": 0.0,
+        "sd": 0.0,
+        "loa_low": 0.0,
+        "loa_high": 0.0
+      },
+      "mean_abs_diff": 0.0
+    },
+    "optimistic": {
+      "n": 160,
+      "ccc": 0.9175371266716207,
+      "bland_altman": {
+        "bias": -0.0502619882449198,
+        "sd": 0.026705596306904895,
+        "loa_low": -0.10260495700645339,
+        "loa_high": 0.0020809805166137965
+      },
+      "mean_abs_diff": 0.0502619882449198
+    },
+    "claim_truth_bias": {
+      "n": 160,
+      "ccc": 0.9114087678482407,
+      "bland_altman": {
+        "bias": 0.003888024012585295,
+        "sd": 0.06077629161348678,
+        "loa_low": -0.11523350754984879,
+        "loa_high": 0.12300955557501939
+      },
+      "mean_abs_diff": 0.054150012257505084
+    },
+    "asymmetric": {
+      "n": 160,
+      "ccc": 0.9866645806287093,
+      "bland_altman": {
+        "bias": -0.0049343830056226,
+        "sd": 0.021576007576023404,
+        "loa_low": -0.04722335785462847,
+        "loa_high": 0.03735459184338327
+      },
+      "mean_abs_diff": 0.0049343830056226
+    },
+    "order": {
+      "n": 160,
+      "ccc": 0.9838094678129713,
+      "bland_altman": {
+        "bias": 0.0006645147863532375,
+        "sd": 0.025140892931214145,
+        "loa_low": -0.04861163535882649,
+        "loa_high": 0.049940664931532965
+      },
+      "mean_abs_diff": 0.012914701548793645
+    },
+    "insensitive": {
+      "n": 160,
+      "ccc": 0.41176470588235325,
+      "bland_altman": {
+        "bias": -0.09000000000000001,
+        "sd": 0.12037676701812455,
+        "loa_low": -0.3259384633555241,
+        "loa_high": 0.14593846335552413
+      },
+      "mean_abs_diff": 0.11999999999999997
+    },
+    "noisy": {
+      "n": 160,
+      "ccc": 0.7445306497632744,
+      "bland_altman": {
+        "bias": 0.016115179208277472,
+        "sd": 0.1127325740460254,
+        "loa_low": -0.20484066592193229,
+        "loa_high": 0.23707102433848726
+      },
+      "mean_abs_diff": 0.08922877925708257
+    },
+    "constant_offset": {
+      "n": 160,
+      "ccc": 1.0,
+      "bland_altman": {
+        "bias": -1.6653345369377347e-17,
+        "sd": 1.1289184589564584e-16,
+        "loa_low": -2.379213633248432e-16,
+        "loa_high": 2.046146725860885e-16
+      },
+      "mean_abs_diff": 8.326672684688674e-17
+    }
+  }
+}

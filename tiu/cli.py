@@ -66,6 +66,20 @@ def cmd_analyze(args: argparse.Namespace) -> None:
         print(f"  {family:<12} TCE={sub.tce:.3f}  bias={sub.bias:+.3f}  AUC={sub.auc:.3f}")
 
 
+def cmd_instrument(args: argparse.Namespace) -> None:
+    from .instrument import load_observations, main as inst_main, summarise
+    from .invariance import report
+    from .substrates import DEFECTS
+
+    if args.observations:
+        rep = report(load_observations(args.observations), ground_truth=False)
+        print(summarise([rep]))
+        return
+
+    defects = DEFECTS if args.defect == "all" else (args.defect,)
+    inst_main(defects, args.out)
+
+
 def cmd_simulate(args: argparse.Namespace) -> None:
     from .simulate import main as sim_main
 
@@ -90,6 +104,17 @@ def main(argv: list[str] | None = None) -> int:
 
     p = sub.add_parser("simulate", help="run the estimator validation study")
     p.set_defaults(func=cmd_simulate)
+
+    p = sub.add_parser(
+        "instrument",
+        help="validate elicitation substrates (null bias, symmetry, order, paraphrase)",
+    )
+    p.add_argument("--defect", default="all",
+                   help="simulated defect to run, or 'all'")
+    p.add_argument("--observations", default=None,
+                   help="score a JSONL of collected observations instead")
+    p.add_argument("--out", default="results/invariance.json")
+    p.set_defaults(func=cmd_instrument)
 
     args = parser.parse_args(argv)
     args.func(args)
