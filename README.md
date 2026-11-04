@@ -73,7 +73,7 @@ python -m tiu.cli instrument                             # instrument validation
 python -m tiu.cli instrument --observations results/invariance.jsonl
 python -m tiu.cli analyze --results results/transcripts.jsonl
 python tests/test_inference.py                           # 10 tests
-python tests/test_invariance.py                          # 15 tests
+python tests/test_invariance.py                          # 19 tests
 ```
 
 No third-party dependencies beyond numpy/scipy for the core modules.
